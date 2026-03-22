@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Emeralytics | SEO & Analytics Agency</title>
+  <link rel="shortcut icon" type="x-icon" href="images/image-06.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <meta name="description" content="Emeralytics is a professional SEO and analytics agency helping businesses grow with data-driven strategies." />
+  <meta name="keywords" content="SEO agency, analytics, digital marketing, Emeralytics" />
+  <meta name="author" content="Emeralytics" />
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/image-04.png" alt="Emeralytics Logo">
+    </div>
+    <ul class="pcbar">
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#services">Services</a></li>
+      <li class="hideOnMobile"><a href="#about">About</a></li>
+      <li class="hideOnMobile"><a href="#team">Contacts</a></li>
+      <li onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul> 
+
+    <ul class="sidebar">
+    <li onclick="hideSidebar()"><button class="close-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button></li>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#team">Contacts</a>
+    </ul>
+  </nav>
+  
+  <script>
+      function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+      }
+
+  </script>
+
+  <header class="hero">
+    <div class="hero-glass"></div>
+
+    <div class="hero-content">
+        <img class="hero-image" src="images/image-03.png" />
+        <p>Beyond Basic <span style="font-weight: bold; font-style: italic;">Analytics</span></p>
+    </div>
+  </header>
+
+
+  <section id="services" class="section-animate">
+    <h2>Our Services</h2>
+    <div class="grid" style="margin-top: 20px;">
+      <div class="s-card">
+        <img src="images/seo_image.jpg" alt="SEO optimization icon" />
+        <h3>Search Engine Optimization</h3>
+        <p>Technical SEO, on-page optimization, and keyword strategies built to rank and convert.</p>
+      </div>
+      <div class="s-card">
+        <img src="images/d&a_image.jpg" alt="Data analytics icon" />
+        <h3>Data & Analytics</h3>
+        <p>Advanced tracking, dashboards, and insights that guide smarter business decisions.</p>
+      </div>
+      <div class="s-card">
+        <img src="images/cs_image.png" alt="Content strategy icon" />
+        <h3>Content Strategy</h3>
+        <p>High-impact content designed to attract, engage, and build long-term authority.</p>
+      </div>
+      <div class="s-card">
+        <img src="images/dm_iamge.webp" alt="Digital marketing icon" />
+        <h3>Digital Marketing</h3>
+        <p>Targeted campaigns across social media and paid ads to grow reach and conversions.</p>
+      </div>
+      <div class="s-card">
+        <img src="images/vb_image.jpg" alt="Brand identity icon" />
+        <h3>Visual Branding</h3>
+        <p>Consistent design systems, color palettes, and typography that strengthen brand identity.</p>
+      </div>
+      <div class="s-card">
+        <img src="images/smm_image.jpeg" alt="Social media marketing icon" />
+        <h3>Social Media Marketing</h3>
+        <p>Platform-specific strategies to grow engagement, reach, and brand presence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section-animate">
+    <h2>Why Emeralytics?</h2>
+    <p style="margin-top:20px; max-width:800px;">
+      Emeralytics blends clean design, technical excellence, and data-driven SEO strategies.
+      Our green-first philosophy represents growth, sustainability, and long-term success for our clients.
+    </p>
+  </section>
+
+  <!-- ===== CTA Section ===== -->
+  <section class="cta section-animate" id="contact">
+    <h2>Ready to Grow?</h2>
+    <p>Let Emeralytics optimize your digital presence and unlock real results.</p>
+    <button href="https://www.facebook.com/emeralytics/">Get in Touch</button>
+  </section>
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="script.js"></script>
+
+
+
+  <section id="team" class="section-animate">
+    <h2>Here Are Our Professionals</h2>
+    <div class="grid">
+      <div class="card team-card" style="background-color:#2bffbc;">
+        <img src="images/team-1.png" alt="SEO Specialist" class="team-avatar" />
+        <h3>Rico Buenconsejo</h3>
+        <p>SEO Strategist</p>
+        <button onclick="openModal('images/team-1.png', 'Rico Buenconsejo','Senior SEO Strategist','rico_emeralytics@gmail.com','+63','Expert in technical SEO, audits, and growth strategies.')">See More</button>
+      </div>
+      <div class="card team-card" style="background-color:#63ffce;">
+        <img src="images/team-2.png" alt="Analytics Expert" class="team-avatar" />
+        <h3>Sherwin Buenconsejo</h3>
+        <p>Analytics & Data Lead</p>
+        <button onclick="openModal('images/team-2.png', 'Sherwin Buenconsejo','Analytics & Data Lead','sherwin_emeralytics@gmail.com','+63','Specialist in dashboards, GA4, and data-driven insights.')">See More</button>
+      </div>
+      <div class="card team-card" style="background-color:#98fbdb;">
+        <img src="images/team-3.png" alt="Content Strategiest" class="team-avatar" />
+        <h3>John Sherloun Espero</h3>
+        <p>Content Strategist</p>
+        <button onclick="openModal('images/team-3.png','John Sherloun Espero','Content Strategist','loun_emeralytics@gmail.com','+63 ','Creates SEO-focused content that builds authority.')">See More</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">×</span>
+
+      <img id="modalImage" class="modal-image" alt="Team member photo">
+
+      <h3 id="modalName"></h3>
+      <p id="modalRole"></p>
+      <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+      <p><strong>Phone:</strong> <span id="modalPhone"></span></p>
+      <p id="modalBio"></p>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>© 2026 Emeralytics. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function contactAlert() {
+      alert('Thanks for your interest! Contact form integration coming soon.');
+    }
+
+    function openModal(image, name, role, email, phone, bio) {
+      document.getElementById('modalImage').src = image;
+      document.getElementById('modalName').innerText = name;
+      document.getElementById('modalRole').innerText = role;
+      document.getElementById('modalEmail').innerText = email;
+      document.getElementById('modalPhone').innerText = phone;
+      document.getElementById('modalBio').innerText = bio;
+      document.getElementById('modal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+  </script>
+
+  <script>
+    const track = document.querySelector('.track');
+    track.innerHTML += track.innerHTML;
+  </script>
+
+<script>
+  /* 🚀 Intersection Observer – Animate Once */
+  const animateSections = document.querySelectorAll('.section-animate');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target); // 👈 stop observing after first animation
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  animateSections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
